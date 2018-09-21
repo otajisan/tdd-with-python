@@ -5,6 +5,10 @@ jobs:
             - image: circleci/python:3.6.5
         steps:
             - checkout
+            - restore_cache:
+                keys:
+                    - v1-dependencies-{{ .Branch }}-{{ checksum "setup.py" }}
+                    - v1-dependencies-{{ .Branch }}
             - run:
                 name: install dependencies
                 command: |
@@ -20,5 +24,7 @@ jobs:
                 command: |
                     . venv/bin/activate
                     tox
+            - store_artifacts:
+                path: artifacts
             - store_test_results:
                 path: artifacts
