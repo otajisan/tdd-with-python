@@ -12,6 +12,7 @@ def test_get_message():
     assert obj.get_message() == 'Hello World'
 
 
+@pytest.mark.smoke
 def test_say_hello(capsys):
     '''success return hello message'''
     obj = Hello()
