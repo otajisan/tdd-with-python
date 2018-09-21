@@ -43,3 +43,11 @@ def test_skip_sample():
 def test_use_sample_fixture(sample_fixture):
     '''use fixture sample'''
     assert True
+
+
+def test_sample_monkeypatch(monkeypatch):
+    '''use monckeypatch sample'''
+    obj = Hello()
+    monkeypatch.setattr(obj, 'say',
+                        (lambda x: 'MonkeyPatch {}'.format(x)))
+    assert obj.say('Test') == 'MonkeyPatch Test'
