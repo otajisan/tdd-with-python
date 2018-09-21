@@ -8,3 +8,5 @@ pytest-cov
 coverage
 pylint
 tox
+pytest-sugar
+pytest-emoji

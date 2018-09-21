@@ -30,9 +30,12 @@ pyflakes==1.6.0           # via flake8
 pygments==2.2.0           # via readme-renderer
 pylint==2.1.1
 pytest-cov==2.6.0
+pytest-emoji==0.1.0
+pytest-sugar==0.9.1
 pytest==3.8.0
 readme-renderer==22.0
 six==1.11.0               # via astroid, bleach, html5lib, mock, more-itertools, pytest, readme-renderer, tox
+termcolor==1.1.0          # via pytest-sugar
 toml==0.9.6               # via tox
 tox==3.4.0
 typed-ast==1.1.0          # via astroid
