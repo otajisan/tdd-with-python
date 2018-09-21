@@ -17,7 +17,12 @@ class Hello:
         '''execute'''
         return self.message
 
-    def say(self):
-        '''say message'''
-        print(self.get_message())
-        return self.get_message()
+    def say_hello(self):
+        '''say default message'''
+        return self.say(self.get_message())
+
+    @staticmethod
+    def say(message):
+        '''say given message'''
+        print(message)
+        return message
