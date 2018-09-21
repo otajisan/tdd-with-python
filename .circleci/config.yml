@@ -21,4 +21,4 @@ jobs:
                     . venv/bin/activate
                     tox
             - store_test_results:
-                path: test-reports
+                path: artifacts
