@@ -1,0 +1,10 @@
+setuptools
+readme_renderer
+flake8
+flake8-import-order
+mock
+pytest
+pytest-cov
+coverage
+pylint
+tox
