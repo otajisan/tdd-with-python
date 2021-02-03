@@ -7,7 +7,7 @@
 astroid==2.0.4            # via pylint
 atomicwrites==1.2.1       # via pytest
 attrs==18.2.0             # via pytest
-bleach==2.1.4             # via readme-renderer
+bleach==3.3.0             # via readme-renderer
 cffi==1.11.5              # via cmarkgfm
 cmarkgfm==0.4.2           # via readme-renderer
 coverage==4.5.1
